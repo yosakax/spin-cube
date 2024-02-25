@@ -1,7 +1,7 @@
 use std::thread::sleep;
 use std::time::Duration;
 
-const WIDTH: usize = 250;
+const WIDTH: usize = 100;
 const HEIGHT: usize = 50;
 const K1: f64 = 40_f64;
 const DISTANCE_FROM_CAM: f64 = 100.0;
@@ -62,7 +62,7 @@ fn main() {
         buffer.fill(background);
         z_buffer.fill(0.0);
         let cube_width = 20f64;
-        horizontal_offset = -2.0 * cube_width;
+        horizontal_offset = -cube_width;
         let mut cube_x = -cube_width;
         while cube_x < cube_width {
             let mut cube_y = -cube_width;
